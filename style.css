@@ -1,101 +1,321 @@
-* {
-  margin: 0;
-  padding: 0;
-
-  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
-}
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+*/
 
 body {
-  background: #fff;
+  margin: 30px 0px 0px 0px;
+  padding: 0;
+  background-color: #FAFAFA;
+  font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Verdana, "ＭＳ Ｐゴシック", "MS PGothic", IPAPGothic, sans-serif;
+  font-size: 14px;
+  color: #3E3B36;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  color: #342659;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+p, ul, ol {
+  margin-top: 0;
+  line-height: 180%;
+}
+
+ul, ol {
 }
 
 a {
   text-decoration: none;
-}
-
-a:link,
-a:visited {
-  color: #f30;
+  color: navy;
 }
 
 a:hover {
-  color: #f90;
 }
 
-#main {
-  position: absolute;
-
-  top: 40px;
-  left: 280px;
-
-  width: 500px;
+#wrapper {
+  margin: 0 auto;
+  padding: 0;
 }
 
-#main h1 {
-  font-size: 40px;
-  font-weight: normal;
 
-  line-height: 40px;
+/* Logo */
 
-  letter-spacing: -1px;
+#logo {
+	width: 280px;
+	margin: 0 0 50px 0;
+	padding: 0;
 }
 
-#main p {
-  margin: 20px 0;
-
-  font-size: 15px;
-
-  line-height: 20px;
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+	letter-spacing: -2px;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-#main ul, #main ol {
-  margin: 20px;
+#logo h1 {
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+	font-size: 50px;
 }
 
-#main li {
-  font-size: 15px;
-
-  line-height: 20px;
+#logo h1 a {
+	color: gold;
 }
 
-#main ul li {
-  list-style-type: square;
+#logo p {
+	margin: 0px;
+	font-size: 20px;
+	color: #E0B1B9;
+} 
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #E0B1B9;
 }
+
+
+/* Menu */
+
+#menu {
+	width: 280px;
+	margin: 20px auto 50px auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 50px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	border-bottom: 1px dashed #FFF10F;
+        padding:0;
+}
+
+#menu a {
+	display: block;
+	width: 260px;
+	margin: 4px 0px;
+	padding: 8px 0px 0px 0px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	color: #2860A3;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#page-bgtop {
+}
+
+#page-bgbtm {
+	overflow: hidden;
+	width: 920px;
+	padding: 20px 40px 20px 40px;
+}
+/* Content */
+
+#content {
+	float: right;
+	width: 550px;
+	padding: 20px 30px 0px 30px;
+	background: #FFFFFF;
+	border-radius: 10px;
+box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, .2);}
+
+.post {
+	margin-bottom: 40px;
+}
+
+.post h2 {
+	padding: 0px 0px 20px 0px;
+	text-transform: lowercase;
+	letter-spacing: -.5px;
+}
+
+.post .title a {
+	color: #2860A3;
+	border: none;
+}
+
+.post .meta {
+	overflow: hidden;
+	background-color: #2860A3;
+	margin-bottom: 10px;
+	padding: 5px 10px 5px 10px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.post .meta .date {
+	float: left;
+}
+
+.post .meta .posted {
+	float: right;
+}
+
+.post .meta a {
+	color: #E0EA3A;
+}
+
+.post .entry {
+	padding: 0px 0px 10px 0px;
+	border-bottom: 1px dashed #DCD4A7;
+	text-align: justify;
+}
+
+.links {
+	padding-top: 20px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/* Sidebar */
 
 #sidebar {
-  position: absolute;
-
-  top: 40px;
-  left: 20px;
-  width: 200px;
-
-  padding: 20px 20px 0 0;
-
-  border-right: 1px solid #ccc;
-
-  text-align: right;
-}
-
-#sidebar h2 {
-  text-transform: uppercase;
-
-  font-size: 13px;
-
-  color: #333;
-
-  letter-spacing: 1px;
-
-  line-height: 20px;
+	float: left;
+	width: 280px;
+	margin: 0px;
+	padding: 0px 0px 80px 10px;
+	color: #555;
 }
 
 #sidebar ul {
-  list-style-type: none;
-
-  margin: 20px 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 #sidebar li {
-  font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
 
-  line-height: 20px;
+#sidebar li ul {
+	margin: 0px 0px 0px 0px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+    margin:7px 0 0 0;
+	line-height: 190%;
+	border-bottom: 1px dashed #ddd;
+	border-left: none;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar li li a {
+	color: #2860A3;
+}
+
+#sidebar li li a:hover {
+	color: gold;
+}
+
+#sidebar h2 {
+	padding-bottom: 10px;
+	height: 38px;
+	letter-spacing: -.5px;
+	font-size: 1.8em;
+	color: gold;
+}
+
+#sidebar p {
+	margin: 0px 0px 20px 0px;
+	padding: 0px 20px 0px 0px;
+}
+
+#sidebar a {
+	border: none;
+}
+
+#sidebar a:hover {
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	width: 920px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0px 0 15px 310px;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 12px;
+	text-align: center;
+	color: #666;
+}
+
+#footer a {
+	color: #999;
 }
