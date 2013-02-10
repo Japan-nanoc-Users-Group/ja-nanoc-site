@@ -14,8 +14,30 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+preprocess do 
+  generate_page
+end
+
 compile '/stylesheet/' do
   # don’t filter or layout
+end
+
+compile '/' do
+  # don’t filter or layout
+end
+
+compile '/news_archives/*/' do
+  filter :erb
+  layout 'news_archives'
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    filter :kramdown
+    layout 'default'
+  end
 end
 
 compile '*' do

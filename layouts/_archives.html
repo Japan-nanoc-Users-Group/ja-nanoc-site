@@ -1,0 +1,13 @@
+<% sorted_articles.each_with_index do |item, index|  %>
+  <% if index > item[:page_number].to_i * 7 - 8 && index < item[:page_number].to_i * 7 %>  
+    <div class="post">
+      <h2 class="title"><%= item[:title] %></h2>
+      <p class="meta"><span class="date"><%= item[:created_at] %></span></p>
+      <div style="clear: both;">&nbsp;</div>
+      <div class="entry">
+        <%= strip_html(item.reps.first.compiled_content).slice(0,100) %>
+        <p class="links"><a href="<%= item.identifier %>">この記事のページへ</a></p>
+      </div>
+    </div>
+  <% end %> 
+<% end %>

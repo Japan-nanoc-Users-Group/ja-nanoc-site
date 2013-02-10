@@ -26,15 +26,10 @@ Released   : 20120513
     <div id="page-bgtop">
       <div id="page-bgbtm">
         <div id="content">
-          <div class="post">
+          <h3 style="padding:5px;text-align:center;border:2px solid #ddd;margin-bottom:10px;"><%= @item[:title] %></h3>
 
-            <h2 class="title"><%= @item[:title] %></h2>
-            <p class="meta"><span class="date"><%= @item[:created_at] %></span></p>
-            <div style="clear: both;">&nbsp;</div>
-            <div class="entry">
               <%= yield %>
-            </div>
-          </div>
+
           <div style="clear: both;">&nbsp;</div>
 
         </div>
