@@ -23,7 +23,7 @@ compile '/stylesheet/' do
 end
 
 compile '/' do
-  # don’t filter or layout
+  filter :erb
 end
 
 compile '/news_archives/*/' do

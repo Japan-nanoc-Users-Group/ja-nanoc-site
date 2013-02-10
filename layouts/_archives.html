@@ -1,5 +1,5 @@
 <% sorted_articles.each_with_index do |item, index|  %>
-  <% if index > item[:page_number].to_i * 7 - 8 && index < item[:page_number].to_i * 7 %>  
+  <% if index >= @item[:page_number].to_i * 7 - 7 && index < @item[:page_number].to_i * 7 %>
     <div class="post">
       <h2 class="title"><%= item[:title] %></h2>
       <p class="meta"><span class="date"><%= item[:created_at] %></span></p>

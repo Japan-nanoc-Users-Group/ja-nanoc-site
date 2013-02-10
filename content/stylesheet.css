@@ -30,6 +30,12 @@ h2 {
 h3 {
   font-size: 1.6em;
 }
+h3#news_archives_counter{
+  padding:5px;
+  text-align:center;
+  border:2px solid #ddd;
+  margin-bottom:10px;
+}
 
 p, ul, ol {
   margin-top: 0;
