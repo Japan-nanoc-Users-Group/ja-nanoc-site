@@ -31,6 +31,14 @@ compile '/news_archives/*/' do
   layout 'news_archives'
 end
 
+compile '/feed/' do
+  filter :erb
+end
+
+compile '/sitemap/' do
+  filter :erb
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -51,6 +59,14 @@ end
 
 route '/stylesheet/' do
   '/style.css'
+end
+
+route '/feed/' do 
+  '/feed.xml'
+end
+
+route '/sitemap/' do 
+  '/sitemap.xml'
 end
 
 route '*' do
