@@ -2,4 +2,3 @@
 title: "日本nanocユーザ会 sitemap"
 ---
 <%= xml_sitemap :items => @items.reject{ |i| !i[:publish] || i.binary? } %>
-
