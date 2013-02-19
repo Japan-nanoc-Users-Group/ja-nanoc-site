@@ -6,6 +6,11 @@
       <div id="page-bgbtm">
         <div id="content">
           <h3 id="news_archives_counter"><%= @item[:title] %></h3>
+          <p>Pages: 
+            <% @item[:max_page_number].to_i.times do |i| %>
+              [<a href='/news_archives/<%= i + 1 %>/'><%= i + 1 %></a>]　
+            <% end %>
+          </p>
 
               <%= yield %>
 

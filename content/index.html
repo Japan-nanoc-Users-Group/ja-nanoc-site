@@ -4,39 +4,11 @@ publish: true
 ---
 <%= render('_header') %>
 <body>
-<div id="wrapper">
-  <div id="page">
-    <div id="page-bgtop">
-      <div id="page-bgbtm">
-        <div id="content">
-          <h3 id="news_archives_counter"><%= @item[:title] %></h3>
-
-            <% sorted_articles[0..6].each do |item|  %>
-              <div class="post">
-                <h2 class="title"><%= item[:title] %></h2>
-                <p class="meta"><span class="date"><%= item[:created_at] %></span></p>
-                <div style="clear: both;">&nbsp;</div>
-                <div class="entry">
-                  <%= strip_html(item.reps.first.compiled_content).slice(0,100) %>
-                  <p class="links"><a href="<%= item.identifier %>">この記事のページへ</a></p>
-                </div>
-              </div>
-            <% end %>
-
-          <div style="clear: both;">&nbsp;</div>
-
-        </div>
-
-        <!-- end #content -->
-
-        <%= render('_side') %>
-        <!-- end #sidebar -->
-        <div style="clear: both;">&nbsp;</div>
-      </div>
-    </div>
+<div id="index_wrapper">
+  <div id="index_logo">
+     <h1>Japan<br />nanoc<br />Users&#039;<br />Group</h1>  
   </div>
-  <!-- end #page -->
+  <p><a href="/news_archives/1/">News</a> | <a href="/articles/">Tips</a></p>
 </div>
-<%= render('_footer') %>
+
 </body>
-</html>

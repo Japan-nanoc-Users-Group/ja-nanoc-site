@@ -5,9 +5,9 @@ Released for free under a Creative Commons Attribution 3.0 License
 */
 
 body {
-  margin: 30px 0px 0px 0px;
+  margin: 0;
   padding: 0;
-  background-color: #FAFAFA;
+  background-color: #F3F3F3;
   font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Verdana, "ＭＳ Ｐゴシック", "MS PGothic", IPAPGothic, sans-serif;
   font-size: 14px;
   color: #3E3B36;
@@ -54,7 +54,7 @@ a:hover {
 }
 
 #wrapper {
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0;
 }
 
@@ -96,6 +96,28 @@ a:hover {
 	background: none;
 	text-decoration: none;
 	color: #E0B1B9;
+}
+
+#index_wrapper{
+    margin:0;paddin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    margin-left:-140px;
+    margin-top:-200px;
+}
+
+#index_logo{
+    color: gold;
+    width:280px;
+}
+
+#index_logo h1{
+    font-size: 50px;
+    color: gold;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 
