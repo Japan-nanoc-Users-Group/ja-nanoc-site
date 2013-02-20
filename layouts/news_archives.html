@@ -5,14 +5,14 @@
     <div id="page-bgtop">
       <div id="page-bgbtm">
         <div id="content">
-          <h3 id="news_archives_counter"><%= @item[:title] %></h3>
-          <p>Pages: 
+
+              <%= yield %>
+
+          <p>Pages (<%= @item[:title] %>): 
             <% @item[:max_page_number].to_i.times do |i| %>
               [<a href='/news_archives/<%= i + 1 %>/'><%= i + 1 %></a>]　
             <% end %>
           </p>
-
-              <%= yield %>
 
           <div style="clear: both;">&nbsp;</div>
 
