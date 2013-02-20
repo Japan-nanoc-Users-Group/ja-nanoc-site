@@ -2,13 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-02-09T15:00:00Z</updated>
+  <updated>2013-02-20T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-02-21:/news/2013/02/opening_event/</id>
+    <title type="html">日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会</title>
+    <published>2013-02-20T15:00:00Z</published>
+    <updated>2013-02-20T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/02/opening_event/"/>
+    <content type="html">&lt;h2 id="section"&gt;設立集会と勉強会を開催します&lt;/h2&gt;
+
+&lt;p&gt;設立集会と勉強会の案内をFacebookページにて行っております。
+詳細についてはFacebookページにてご確認ください。随時更新します。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.facebook.com/events/405981442824831/" title="日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会"&gt;Facebookページ　日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="section-1"&gt;開催日時&lt;/h3&gt;
+&lt;p&gt;平成25年4月6日土曜日　16時〜17時30分&lt;/p&gt;
+
+&lt;h3 id="section-2"&gt;場所&lt;/h3&gt;
+&lt;p&gt;松江テルサ別館2階松江オープンソースラボ（駅前ローソン2階）&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-02-10:/news/2013/02/jnanoc_site_opend/</id>
     <title type="html">サイトを設置しました</title>
