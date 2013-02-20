@@ -5,9 +5,8 @@
     <div id="page-bgtop">
       <div id="page-bgbtm">
         <div id="content">
-          <h3 id="news_archives_counter"><%= @item[:title] %></h3>
-
-              <%= yield %>
+          <p>Pages :<%= pagination_bar %></p>
+          <%= yield %>
 
           <div style="clear: both;">&nbsp;</div>
 
