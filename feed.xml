@@ -2,13 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-02-23T15:00:00Z</updated>
+  <updated>2013-02-26T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-02-27:/news/2013/02/nanoc3-6-1_is_released/</id>
+    <title type="html">nanoc3.6.1がリリースされました</title>
+    <published>2013-02-26T15:00:00Z</published>
+    <updated>2013-02-26T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/02/nanoc3-6-1_is_released/"/>
+    <content type="html">&lt;h2 id="nanoc361"&gt;nanoc3.6.1がリリースされました&lt;/h2&gt;
+
+&lt;p&gt;nanoc3.6.1がリリースされました。主に3.6のFixです。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://groups.google.com/d/topic/nanoc/8LKXnukrSfE/discussion" title="[nanoc] nanoc 3.6.1 released"&gt;nanoc 3.6 released&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
+
+&lt;p&gt;（以下、引用）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’ve released a patch version of nanoc that fixes a few issues introduced in yesterday’s 3.6 release. The fixes: &lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Fixed bug which could cause the Sass filter to raise a load error [Damien Pollet] &lt;/li&gt;
+    &lt;li&gt;Fixed warnings about &lt;strong&gt;send&lt;/strong&gt; and object_id being redefined [Justin Hileman] &lt;/li&gt;
+    &lt;li&gt;Made files_to_watch contain nanoc.yaml, not config.yaml by default &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;You can update your gems using &lt;code&gt;gem update&lt;/code&gt;. Be sure to update your &lt;code&gt;Gemfile.lock&lt;/code&gt; as well, if relevant. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;（引用おわり）&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-02-24:/news/2013/02/nanoc3-6_is_released/</id>
     <title type="html">nanoc3.6がリリースされました</title>
