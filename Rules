@@ -18,17 +18,27 @@ preprocess do
   generate_page
 end
 
+compile '/(content|js|css)/*' do
+  # don’t filter or layout
+end
+
+route '/(content|js|css)/*' do
+  basename = item.identifier.chop
+  ext = item[:extension]
+  if ext == 'dummyext'
+    basename
+  else
+    "#{basename}.#{ext}"
+  end
+end
+
 compile '/stylesheet/' do
   # don’t filter or layout
 end
 
 compile '/' do
   filter :erb
-end
-
-compile '/news_archives/*/' do
-  filter :erb
-  layout 'news_archives'
+  layout 'default'
 end
 
 compile '/feed/' do
@@ -37,6 +47,11 @@ end
 
 compile '/sitemap/' do
   filter :erb
+end
+
+compile '/news_archives/*' do
+  filter :erb
+  layout 'default'
 end
 
 compile '*' do
