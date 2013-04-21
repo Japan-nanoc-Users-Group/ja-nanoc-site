@@ -15,9 +15,7 @@
     <published>2013-04-13T15:00:00Z</published>
     <updated>2013-04-13T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/04/nanoc4_0_on_trello_board/"/>
-    <content type="html">&lt;h2 id="nanoc40"&gt;nanoc4.0へ向けてのタスク管理&lt;/h2&gt;
-
-&lt;p&gt;下記のサイトでタスク管理が行われています。&lt;/p&gt;
+    <content type="html">&lt;p&gt;下記のサイトでタスク管理が行われています。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://trello.com/board/nanoc-4-0/51671a676672ded155000027" title="nanoc4Trello"&gt;nanoc4.0  Trello&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -28,9 +26,7 @@
     <published>2013-04-03T15:00:00Z</published>
     <updated>2013-04-03T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/03/nanoc3-6-2_is_released/"/>
-    <content type="html">&lt;h2 id="nanoc362"&gt;nanoc3.6.2がリリースされました&lt;/h2&gt;
-
-&lt;p&gt;nanoc3.6.2がリリースされました。今回はFixの他、機能追加(Checksファイルとして使える名前の追加等)もあるようです。リリースの内容（原文）は公式のリリースノートを参照してください。&lt;/p&gt;
+    <content type="html">&lt;p&gt;nanoc3.6.2がリリースされました。今回はFixの他、機能追加(Checksファイルとして使える名前の追加等)もあるようです。リリースの内容（原文）は公式のリリースノートを参照してください。&lt;/p&gt;
 
 &lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
 
@@ -64,9 +60,7 @@
     <published>2013-02-26T15:00:00Z</published>
     <updated>2013-02-26T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/02/nanoc3-6-1_is_released/"/>
-    <content type="html">&lt;h2 id="nanoc361"&gt;nanoc3.6.1がリリースされました&lt;/h2&gt;
-
-&lt;p&gt;nanoc3.6.1がリリースされました。主に3.6のFixです。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
+    <content type="html">&lt;p&gt;nanoc3.6.1がリリースされました。主に3.6のFixです。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://groups.google.com/d/topic/nanoc/8LKXnukrSfE/discussion" title="[nanoc] nanoc 3.6.1 released"&gt;nanoc 3.6 released&lt;/a&gt;&lt;/p&gt;
 
@@ -95,9 +89,7 @@
     <published>2013-02-23T15:00:00Z</published>
     <updated>2013-02-23T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/02/nanoc3-6_is_released/"/>
-    <content type="html">&lt;h2 id="nanoc36"&gt;nanoc3.6がリリースされました&lt;/h2&gt;
-
-&lt;p&gt;nanoc3.6がリリースされました。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
+    <content type="html">&lt;p&gt;nanoc3.6がリリースされました。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://groups.google.com/forum/?fromgroups=#!topic/nanoc/fq0x-VO5h6Q" title="[nanoc] nanoc 3.6 released"&gt;nanoc 3.6 released&lt;/a&gt;&lt;/p&gt;
 
@@ -145,7 +137,7 @@ external data [Justin Hileman]&lt;/li&gt;
     <published>2013-02-20T15:00:00Z</published>
     <updated>2013-02-20T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/02/opening_event/"/>
-    <content type="html">&lt;h2 id="section"&gt;設立集会と勉強会を開催します&lt;/h2&gt;
+    <content type="html">&lt;h3 id="section"&gt;設立集会と勉強会を開催します&lt;/h3&gt;
 
 &lt;p&gt;設立集会と勉強会の案内をFacebookページにて行っております。
 詳細についてはFacebookページにてご確認ください。随時更新します。&lt;/p&gt;
