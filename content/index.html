@@ -4,3 +4,13 @@ publish: true
 ---
 
 <p>日本nanocユーザ会では、nanocの普及のため主に日本語情報の配信を行います。</p>
+
+
+<h2>News</h2>
+  <div class="post">
+    <ul>
+    <% sorted_articles[0..5].each do |item|  %>
+      <li>[<%= item[:created_at] %>] <a href="<%= item.identifier %>"><%= item[:title] %></a></li>
+    <% end %>
+    </ul>
+  </div>
