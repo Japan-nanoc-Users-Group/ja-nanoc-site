@@ -2,13 +2,102 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-04-13T15:00:00Z</updated>
+  <updated>2013-04-20T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-04-21:/news/2013/04/nanoc_stdu_group_vol_0/</id>
+    <title type="html">開催しました！「日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会」</title>
+    <published>2013-04-20T15:00:00Z</published>
+    <updated>2013-04-20T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/04/nanoc_stdu_group_vol_0/"/>
+    <content type="html">&lt;p&gt;平成25年4月6日、「日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会」を開催しました。&lt;/p&gt;
+
+&lt;p&gt;多数の皆様にご来場いただきました。ありがとうございます。
+また、発表者のお二人におかれましては、お忙しい中資料作成等のご準備・発表をいただきました。ありがとうございます。&lt;/p&gt;
+
+&lt;h3 id="section"&gt;会場の様子&lt;/h3&gt;
+
+&lt;p&gt;当日は26名の皆様にご参加いただきました。&lt;/p&gt;
+
+&lt;div style="margin:30px 0;"&gt;
+&lt;a class="thumbnail" href="http://www.flickr.com/photos/takashi_u/8646846014/" title="P4061151 by Takashi.U, on Flickr"&gt;&lt;img src="http://farm9.staticflickr.com/8394/8646846014_46bcdfdcef_z.jpg" width="640" height="480" alt="P4061151" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-1"&gt;当日の発表について&lt;/h2&gt;
+
+&lt;p&gt;偶然にもご講演いただいた2名の方が同じ会社「ファーエンドテクノロジー株式会社」に所属していらっしゃいます。&lt;/p&gt;
+
+&lt;p&gt;下記の「ファーエンドテクノロジー株式会社」サイトにご紹介いただいております。
+&lt;a href="http://www.farend.co.jp/blog/2013/04/nanoc-study/" title="farend.co.jp"&gt;第0回nanoc勉強会で発表しました&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;内容は資料をご確認ください。
+（このページでも資料を掲載させていただいています。）&lt;/p&gt;
+
+&lt;h3 id="c-nanoc"&gt;「何なのc?」〜 nanocの基本概念の説明&lt;/h3&gt;
+
+&lt;p&gt;「何なのc?」&lt;br /&gt;
+ファーエンドテクノロジー株式会社&lt;br /&gt;
+取締役　岩石　睦　氏&lt;/p&gt;
+
+&lt;p&gt;nanocの基本的な事項についてご講演いただきました。 &lt;/p&gt;
+
+&lt;div style="margin:30px 0;"&gt;
+&lt;a class="thumbnail" href="http://www.flickr.com/photos/takashi_u/8645748221/" title="P4061150 by Takashi.U, on Flickr"&gt;&lt;img src="http://farm9.staticflickr.com/8529/8645748221_01f21c3041_z.jpg" width="640" height="480" alt="P4061150" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;資料についてはslideshareにアップしていただいてます。&lt;/p&gt;
+
+&lt;iframe src="http://www.slideshare.net/slideshow/embed_code/18284878" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""&gt; &lt;/iframe&gt;
+&lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="http://www.slideshare.net/amidaku/nanoc0th" title="何なのc？" target="_blank"&gt;何なのc？&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="http://www.slideshare.net/amidaku" target="_blank"&gt;Mutsumi IWAISHI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id="nanochelper--helperhelper"&gt;「nanocのhelper 利用実例」〜 組み込みhelperの利用例・helperの作り方&lt;/h3&gt;
+
+&lt;p&gt;「nanocのhelper 利用実例」&lt;br /&gt;
+ファーエンドテクノロジー株式会社&lt;br /&gt;
+代表取締役　前田　剛　氏  &lt;/p&gt;
+
+&lt;p&gt;helperの利用方法についてご講演いただきました。&lt;/p&gt;
+
+&lt;div style="margin:30px 0;"&gt;
+&lt;a class="thumbnail" href="http://www.flickr.com/photos/takashi_u/8645750549/" title="P4061152 by Takashi.U, on Flickr"&gt;&lt;img src="http://farm9.staticflickr.com/8251/8645750549_48789238a2_z.jpg" width="640" height="480" alt="P4061152" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;資料についてはslideshareにアップしていただいてます。&lt;/p&gt;
+
+&lt;iframe src="http://www.slideshare.net/slideshow/embed_code/18287470" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""&gt; &lt;/iframe&gt;
+&lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="http://www.slideshare.net/g_maeda/nanoc-helpers" title="nanocのhelper 利用実例" target="_blank"&gt;nanocのhelper 利用実例&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="http://www.slideshare.net/g_maeda" target="_blank"&gt;g_maeda&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+&lt;h3 id="section-2"&gt;勉強会を終えて&lt;/h3&gt;
+
+&lt;p&gt;日本語情報の拡充ということで、スライドも公開していただきました。ありがとうございます。
+世話役自身はとても勉強になり、早速発表時に教えていただいたtipsをこのサイトにも加えたりしております。&lt;/p&gt;
+
+&lt;p&gt;今後はTipsの整理等を行っていく予定です。また、島根で開催のオープンソースカンファレンス、徳島で開催のオープンソースカンファレンスへ出展か発表したいと目論んでおります。
+次回以降の勉強会については、開催前はやらない方向で考えておりましたが、考えを改めました。定期的にする事はありませんが、思案してみたいと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id="section-3"&gt;懇親会 ＆ その他&lt;/h3&gt;
+
+&lt;p&gt;懇親会にも10名を超える皆さんにお集まりいただきました。ありがとうございます。&lt;/p&gt;
+
+&lt;div style="margin:30px 0;"&gt;
+&lt;a class="thumbnail" href="http://www.flickr.com/photos/takashi_u/8646850386/" title="P4061155 by Takashi.U, on Flickr"&gt;&lt;img src="http://farm9.staticflickr.com/8119/8646850386_c1d2aa9087_z.jpg" width="640" height="480" alt="P4061155" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;写真は懇親会の時の様子です。
+&lt;a href="https://twitter.com/xaizo"&gt;@xaizo&lt;/a&gt;さんには実質的な幹事役として大変お世話になりました。ありがとうございました。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-04-14:/news/2013/04/nanoc4_0_on_trello_board/</id>
     <title type="html">nanoc4.0へ向けてのタスク管理が公開されています</title>
@@ -129,26 +218,6 @@ external data [Justin Hileman]&lt;/li&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;（引用おわり）&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:jnanoc.org,2013-02-21:/news/2013/02/opening_event/</id>
-    <title type="html">日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会</title>
-    <published>2013-02-20T15:00:00Z</published>
-    <updated>2013-02-20T15:00:00Z</updated>
-    <link rel="alternate" href="http://jnanoc.org/news/2013/02/opening_event/"/>
-    <content type="html">&lt;h3 id="section"&gt;設立集会と勉強会を開催します&lt;/h3&gt;
-
-&lt;p&gt;設立集会と勉強会の案内をFacebookページにて行っております。
-詳細についてはFacebookページにてご確認ください。随時更新します。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://www.facebook.com/events/405981442824831/" title="日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会"&gt;Facebookページ　日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id="section-1"&gt;開催日時&lt;/h3&gt;
-&lt;p&gt;平成25年4月6日土曜日　16時〜17時30分&lt;/p&gt;
-
-&lt;h3 id="section-2"&gt;場所&lt;/h3&gt;
-&lt;p&gt;松江テルサ別館2階松江オープンソースラボ（駅前ローソン2階）&lt;/p&gt;
 </content>
   </entry>
 </feed>
