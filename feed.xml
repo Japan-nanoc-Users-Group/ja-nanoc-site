@@ -2,13 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-04-20T15:00:00Z</updated>
+  <updated>2013-04-24T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-04-25:/news/2013/04/nanoc3-6-3_is_released/</id>
+    <title type="html">nanoc3.6.3がリリースされました</title>
+    <published>2013-04-24T15:00:00Z</published>
+    <updated>2013-04-24T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/04/nanoc3-6-3_is_released/"/>
+    <content type="html">&lt;p&gt;nanoc3.6.3がリリースされました。リリースの内容（原文）は公式のリリースノートを参照してください。&lt;/p&gt;
+
+&lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
+
+&lt;p&gt;（以下、引用）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;3.6.3 (2013-04-24)&lt;/p&gt;
+
+  &lt;p&gt;Fixes:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Added support for growlnotify on Windows (#253, #267)&lt;/li&gt;
+    &lt;li&gt;Fixed bug which caused the external links checker to ignore the query string (#279, #297)&lt;/li&gt;
+    &lt;li&gt;Removed weird treatment of DOCTYPEs in the relativize_paths filter (#296)&lt;/li&gt;
+    &lt;li&gt;Fixed CodeRay syntax coloring on Ruby 2.0&lt;/li&gt;
+    &lt;li&gt;Silenced “Could not find files for the given pattern(s)” message on Windows (#298)&lt;/li&gt;
+    &lt;li&gt;Fixed issue which could cause output.diff not to be generated correctly (#255, #301)&lt;/li&gt;
+    &lt;li&gt;Let filesystem and static data sources follow symlinks (#299, #302)&lt;/li&gt;
+    &lt;li&gt;Added compatibility with Listen 1.0 (#309)&lt;/li&gt;
+    &lt;li&gt;Let #passthrough in Rules work well with the static data source (#251) [Gregory Pakosz]&lt;/li&gt;
+    &lt;li&gt;Made timing information be more accurate (#303)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;（引用おわり）&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-04-21:/news/2013/04/nanoc_stdu_group_vol_0/</id>
     <title type="html">開催しました！「日本nanocユーザ会設立の集い ＆ 第0回nanoc勉強会」</title>
@@ -167,54 +201,6 @@
   &lt;/ul&gt;
 
   &lt;p&gt;You can update your gems using &lt;code&gt;gem update&lt;/code&gt;. Be sure to update your &lt;code&gt;Gemfile.lock&lt;/code&gt; as well, if relevant. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;（引用おわり）&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:jnanoc.org,2013-02-24:/news/2013/02/nanoc3-6_is_released/</id>
-    <title type="html">nanoc3.6がリリースされました</title>
-    <published>2013-02-23T15:00:00Z</published>
-    <updated>2013-02-23T15:00:00Z</updated>
-    <link rel="alternate" href="http://jnanoc.org/news/2013/02/nanoc3-6_is_released/"/>
-    <content type="html">&lt;p&gt;nanoc3.6がリリースされました。リリースの内容（原文）は公式のGoogleグループで発表されています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://groups.google.com/forum/?fromgroups=#!topic/nanoc/fq0x-VO5h6Q" title="[nanoc] nanoc 3.6 released"&gt;nanoc 3.6 released&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
-
-&lt;p&gt;（以下、引用）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Release notes for nanoc 3.6.0:&lt;/p&gt;
-
-  &lt;p&gt;Features:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Added &lt;code&gt;sync&lt;/code&gt; command, allowing data sources to update local caches of
-external data [Justin Hileman]&lt;/li&gt;
-    &lt;li&gt;Added &lt;code&gt;#ignore&lt;/code&gt; compiler DSL method&lt;/li&gt;
-    &lt;li&gt;Allowed accessing items by identifier using e.g. &lt;code&gt;@items['/about/']&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;Added &lt;code&gt;shell&lt;/code&gt; command&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Enhancements:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Renamed the nanoc configuration file from &lt;code&gt;config.yaml&lt;/code&gt; to &lt;code&gt;nanoc.yaml&lt;/code&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Fixes:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Updated references to old web site and old repository&lt;/li&gt;
-    &lt;li&gt;Made &lt;code&gt;require&lt;/code&gt; errors mention Bundler if appropriate&lt;/li&gt;
-    &lt;li&gt;Fixed bug which caused pruner not to delete directories in some cases [@reima]&lt;/li&gt;
-    &lt;li&gt;Made &lt;code&gt;check&lt;/code&gt; command exit with the proper exit status&lt;/li&gt;
-    &lt;li&gt;Added support for the &lt;code&gt;HTML_TOC&lt;/code&gt; Redcarpet renderer&lt;/li&gt;
-    &lt;li&gt;Made &lt;code&gt;stale&lt;/code&gt; check honor files excluded by the pruner&lt;/li&gt;
-  &lt;/ul&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;（引用おわり）&lt;/p&gt;
