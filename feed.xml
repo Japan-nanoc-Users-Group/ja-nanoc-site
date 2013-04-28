@@ -15,9 +15,13 @@
     <published>2013-04-28T15:00:00Z</published>
     <updated>2013-04-28T15:00:00Z</updated>
     <link rel="alternate" href="http://jnanoc.org/news/2013/04/guard_nanoc_1_0_0_is_released/"/>
-    <content type="html">&lt;p&gt;　引用元のMLは&lt;a href="https://groups.google.com/forum/#!msg/nanoc/bQ5wyZZHU8k/9LqAUh06KBoJ"&gt;こちら&lt;/a&gt;です。&lt;/p&gt;
+    <content type="html">&lt;p&gt;　導入までのTipsを暫定運用中のWikiにアップしました。（&lt;a href="https://github.com/Japan-nanoc-Users-Group/ja-nanoc-site/wiki/guard-nanoc%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B"&gt;こちらです。&lt;/a&gt;）&lt;/p&gt;
+
+&lt;p&gt;　引用元のMLは&lt;a href="https://groups.google.com/forum/#!msg/nanoc/bQ5wyZZHU8k/9LqAUh06KBoJ"&gt;こちら&lt;/a&gt;です。&lt;/p&gt;
 
 &lt;p&gt;　GitHub上のリポジトリは&lt;a href="https://github.com/guard/guard-nanoc"&gt;こちら&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;p&gt;　Mac利用の際にはreadline関連にもお気をつけください。（&lt;a href="https://github.com/guard/guard/wiki/Add-proper-Readline-support-to-Ruby-on-Mac-OS-X"&gt;参考ページ&lt;/a&gt;）&lt;/p&gt;
 </content>
   </entry>
   <entry>
