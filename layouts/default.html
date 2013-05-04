@@ -56,8 +56,13 @@
     </div>
     <div class="span8">
       <% if @item.identifier[0..14] == "/news_archives/" %>
+        <ul class="breadcrumb">
+          <li><a href="/">トップ</a> <span class="divider">/</span></li>
+          <li class="active">News</li>
+        </ul>
         <%= render('_news_archives') %>
       <% else %>
+        <%= breadcrumbs unless @item.identifier == "/" %>
         <%= render('_article_header') %>
       <% end %>
       <%= yield %>
