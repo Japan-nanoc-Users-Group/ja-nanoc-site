@@ -1,0 +1,17 @@
+---
+title: "準備編"
+publish: true
+created_at: 2013/05/03
+---
+
+<h2>一覧</h2>
+  <div class="post">
+    <ul>
+    <% @items.each do |item|  %>
+      <% if item.identifier[0..18] == "/tips/preparations/" && @item.identifier != item.identifier %>
+        <li><a href="<%= item.identifier %>"><%= item[:title] %></a></li>
+      <% end %>
+    <% end %>
+    </ul>
+  </div>
+

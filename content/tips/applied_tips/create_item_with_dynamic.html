@@ -1,0 +1,46 @@
+---
+title: "動的にページを作成する"
+publish: true
+created_at: 2013/05/03
+---
+
+nanocではcontent以下にコンテンツとなるデータを作成し、それがコンパイルされてHTMLファイルやCSSファイル等が生成されるという流れが一般的です。
+
+しかし、content以下に作られたコンテンツを集計したページ（例えば、月別の記事の一覧等）を作りたいと思ったとき、いちいちcontent以下に一覧を表示させるためのページを作成しなくとも、自動的にページを作る方法があります。（この自動的に集計したページを作ることを、ここでは「動的にページを作成する」と呼んでいます。）
+
+## nanocのコンパイルについての基本事項
+
+では、動的にページを作るにはどうしたらよいのか？それにはまず、nanocのコンパイルについて基本的な事柄を押さえておく必要があります。
+
+nanocのコンパイラ（Nanoc::Compiler）はinisitalizeする時の引数としてNanoc::Siteオブジェクトをとります。そして、コンパイルするときにはこの中のItemsオブジェクトの内容に基づいて実行します。ItemsはItemの集合(Array)で、各Itemはcontent以下に作成された各データ（やRules等）を基に作成されます。
+
+つまり、コンパイルが実行される前にItemオブジェクトを作成し、Itemsの中に入れておけば、そのItemオブジェクトもコンパイルされるという事になります。
+
+## preprocessを利用する
+
+　コンパイルが実行される前に何らかの作業を行いたいときにはRulesにpreprocessを設定、利用します。
+
+    preprocess do 
+      generate_item
+    end
+
+　例えば、このようにRulesに書き加えれば、コンパイル前にgenerate_itemメソッド（helperにて設定）を実行してくれます。
+
+## ItemsにItemを追加する
+
+　それでは、先ほど設定したgenerate_itemメソッドを定義してみましょう。
+
+    def generate_item
+      100.times do |i|
+        item_stats = {:title => i.to_s}
+        @items << Nanoc::Item.new("Page number #{i}", item_stats, "/#{i}/", {:binary => false})
+      end
+    end
+
+　Itemオブジェクトは生成するとき、ざっくりと次の内容の引数をとります。
+
+    Nanoc::Item.new("ページの内容", {titleやarticle等のハッシュを自由に}, "identifier（URL）", {バイナリかどうか？デフォルトは :binary => true})
+
+　そして、このように生成したItemを@items（Itemsオブジェクト）に挿入します。上の例では、たったこれだけでnanocは動的に100のページを作ってくれます。
+
+　ここでは、単に動的にページを作成する方法を紹介しました。これは最初に挙げた例「月別の一覧」を作る時や、Tagging機能を使うときのTagの集計ページを作る時に活用できるテクニックです。

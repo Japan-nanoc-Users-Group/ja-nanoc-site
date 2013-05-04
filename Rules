@@ -41,6 +41,21 @@ compile '/' do
   layout 'default'
 end
 
+compile '/tips/' do
+  filter :erb
+  layout 'default'
+end
+
+compile '/tips/*/*/' do
+  filter :kramdown
+  layout 'default'
+end
+
+compile '/tips/*/' do
+  filter :erb
+  layout 'default'
+end
+
 compile '/feed/' do
   filter :erb
 end

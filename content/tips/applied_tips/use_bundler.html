@@ -1,0 +1,77 @@
+---
+title: "bundlerを利用する"
+publish: true
+created_at: 2013/05/04
+---
+正確にはnanocの利用方法では無く、bundlerの利用方法です。nanocサイトを複数人、複数マシンで共有する場合にはbundlerを利用してgemを管理すると良い場合があります。
+
+ここでは、一例・基本的な利用方法を紹介します。gemのインストール先を指定する--pathオプションは使いません。（動作確認をMac OSで行ってますので、Windowsで同じように動作するかは不明です。）
+
+## 準備
+
+はじめに、nanocのサイトを作成します。例えばhogehogeというサイトを作成します。
+
+    nanoc create_site hogehoge
+
+サイトが作成されたらhogehogeに移動します。
+
+    ls hogehoge
+
+まだbundlerをマシンにインストールしていなければ、次のコマンドでインストールします。
+
+    gem install bundler
+
+## 初期化
+
+ここからbundlerの設定です。
+まず、bundlerの利用に必要なGemfileを作成します。これはコマンドで作成することが出来ます。
+
+    bundle init
+
+次に、gemをインストールします。
+
+    bundle install
+
+後述しますが、Gemfileに設定されたgemをインストールしなければなりません。また、インストールしてあるgemであっても明示的にGemfileに利用するgemを設定しなければ鳴りません。逆に言えば設定していないgemは利用出来ません。このコマンドを利用するとGemfile.lockというファイルが作成されます。
+
+## bundlerを使ってコマンドを実行する
+
+普段nanocのコマンドを利用するときは、例えばコンパイルをするとき、
+
+    nanoc co
+
+とコマンドを打ち込みます。
+bundlerを利用するときは、
+
+    bundle exec nanoc co
+
+のように、「bundle exec」を頭につけます。
+早速、上記のコマンドを使ってみましょう。
+すると、普段出来ていたはずのコンパイルが出来ず、エラーが返ってくると思います。
+
+これは、bundlerでnanocを利用する事を明示していないからです。
+
+## Gemfileに利用するgemを記載する
+
+先ほど作成したGemfileを開いてみます。
+
+    # A sample Gemfile
+    source "https://rubygems.org"
+    
+    # gem "rails"
+
+コメントアウトしてある「gem "rails"」のように、利用したいgemをこのような形で書き込めば良いのです。
+それでは早速Gemfileに次の記述を追加して保存します。（source "http://rubygems.org"は削除しないようにします。）
+
+    gem "nanoc"
+
+Gemfileの変更が終わったら、再びbundle installコマンドを実行します。
+
+    bundle install
+
+もう一度コンパイルをしてみましょう。
+
+    bundle exec nanoc co
+
+今度はコンパイル出来ました。
+nanoc自身は様々なgemに依存しているので、コンパイル以外のコマンドを利用しようとすると、必要なgemが無い事でエラーが出ることがあります。その時は、エラーメッセージを見て、上記手順のようにGemfileへの追記とインストールを行います。何か他のgemを利用したいときも上記の手順でgemを追加していきます。

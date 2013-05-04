@@ -1,0 +1,20 @@
+---
+title: "Tips"
+publish: true
+---
+
+<p>Tipsを公開しています。ネタの提供申し出、誤りを発見した場合の報告等につきましては、上記リンク先のGroupをご利用ください。</p>
+<p>Tipsについてはオリジナル記事の他、Tipsを提供しているページの紹介等、方法を問わず行います。</p>
+
+<h2>Tipsカテゴリ一覧</h2>
+  <div class="post">
+    <ul>
+    <% @items.each do |item|  %>
+      <% if item.identifier == "/tips/" %>
+        <% item.children.each do |child| %>
+          <li><a href="<%= child.identifier %>"><%= child[:title] %></a></li>
+        <% end %>
+      <% end %>
+    <% end %>
+    </ul>
+  </div>
