@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>nanoc3.6がリリースされました</title>
+<title>guard nanocを利用する</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
@@ -94,51 +94,50 @@
     </div>
     <div class="span8">
       
-        <ul class="breadcrumb"><li><a href="/">トップ</a> <span class="divider">/</span></li><li><a href="/news_archives/1/">News</a> <span class="divider">/</span></li><li class="active">nanoc3.6がリリースされました</li></ul>
-        <h2 class="title">nanoc3.6がリリースされました</h2>
-<p class="meta"><span class="date">2013-02-24</span></p>
-
+        <ul class="breadcrumb"><li><a href="/">トップ</a> <span class="divider">/</span></li><li><a href="/tips/">Tips</a>  <span class="divider">/</span></li><li><a href="/tips/applied_tips/">応用編</a>  <span class="divider">/</span></li><li class="active">guard nanocを利用する</li></ul>
+        
       
-      <p>nanoc3.6がリリースされました。リリースの内容（原文）は公式のGoogleグループで発表されています。</p>
+      <p>watchコマンドからguard利用を推奨する流れになってきています。(2013.4.29にguard-nanoc 1.0.0 がリリースされました。)</p>
 
-<p><a href="https://groups.google.com/forum/?fromgroups=#!topic/nanoc/fq0x-VO5h6Q" title="[nanoc] nanoc 3.6 released">nanoc 3.6 released</a></p>
+<p>公式のGitHub上<a href="https://github.com/guard/guard-nanoc">guard-nanoc</a>で解説されていますが、guardの使い方はguardの公式を見るべしとのことなので、ここではざっくりと動かすところまで確認します。</p>
 
-<h3 id="section">リリースノート引用</h3>
+<p>bundlerを利用した例です。bundlerについては[[bundlerを利用する]]をご覧ください。</p>
 
-<p>（以下、引用）</p>
+<p>始めに、Gemfileに次の記述を追加します。</p>
 
-<blockquote>
-  <p>Release notes for nanoc 3.6.0:</p>
+<pre><code>gem "guard"
+gem "guard-nanoc"
+</code></pre>
 
-  <p>Features:</p>
+<p>続いて、次のコマンドで先ほど追加したgemをインストールします。</p>
 
-  <ul>
-    <li>Added <code>sync</code> command, allowing data sources to update local caches of
-external data [Justin Hileman]</li>
-    <li>Added <code>#ignore</code> compiler DSL method</li>
-    <li>Allowed accessing items by identifier using e.g. <code>@items['/about/']</code></li>
-    <li>Added <code>shell</code> command</li>
-  </ul>
+<pre><code>bundle update
+</code></pre>
 
-  <p>Enhancements:</p>
+<p>Guardファイルを作成するため、次のコマンドを打ち込みます。</p>
 
-  <ul>
-    <li>Renamed the nanoc configuration file from <code>config.yaml</code> to <code>nanoc.yaml</code></li>
-  </ul>
+<pre><code>bundle exec guard init nanoc
+</code></pre>
 
-  <p>Fixes:</p>
+<p>すると、次の内容でGuardファイルが生成されました。</p>
 
-  <ul>
-    <li>Updated references to old web site and old repository</li>
-    <li>Made <code>require</code> errors mention Bundler if appropriate</li>
-    <li>Fixed bug which caused pruner not to delete directories in some cases [@reima]</li>
-    <li>Made <code>check</code> command exit with the proper exit status</li>
-    <li>Added support for the <code>HTML_TOC</code> Redcarpet renderer</li>
-    <li>Made <code>stale</code> check honor files excluded by the pruner</li>
-  </ul>
-</blockquote>
+<pre><code># A sample Guardfile
+# More info at https://github.com/guard/guard#readme
+   
+guard 'nanoc' do
+  watch('nanoc.yaml') # Change this to config.yaml if you use the old config file name
+  watch('Rules')
+  watch(%r{^(content|layouts|lib)/.*$})
+end
+</code></pre>
 
-<p>（引用おわり）</p>
+<p>監視するファイルやフォルダの設定はこのままに、guardを利用してみます。
+次のコマンドを打ち込みます。</p>
+
+<pre><code>bundle exec guard
+</code></pre>
+
+<p>これで、ファイルが更新される度、自動的にコンパイルされるようになりました。</p>
 
     </div>
   </div>

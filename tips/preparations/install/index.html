@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>nanoc3.6がリリースされました</title>
+<title>インストール</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
@@ -94,51 +94,39 @@
     </div>
     <div class="span8">
       
-        <ul class="breadcrumb"><li><a href="/">トップ</a> <span class="divider">/</span></li><li><a href="/news_archives/1/">News</a> <span class="divider">/</span></li><li class="active">nanoc3.6がリリースされました</li></ul>
-        <h2 class="title">nanoc3.6がリリースされました</h2>
-<p class="meta"><span class="date">2013-02-24</span></p>
-
+        <ul class="breadcrumb"><li><a href="/">トップ</a> <span class="divider">/</span></li><li><a href="/tips/">Tips</a>  <span class="divider">/</span></li><li><a href="/tips/preparations/">準備編</a>  <span class="divider">/</span></li><li class="active">インストール</li></ul>
+        
       
-      <p>nanoc3.6がリリースされました。リリースの内容（原文）は公式のGoogleグループで発表されています。</p>
+      <p>ここではnanocのインストールに関する情報を記載しています。一次情報はこちらの<a href="nanoc公式サイト（英語）のインストールページ">http://nanoc.ws/install/</a>です。</p>
 
-<p><a href="https://groups.google.com/forum/?fromgroups=#!topic/nanoc/fq0x-VO5h6Q" title="[nanoc] nanoc 3.6 released">nanoc 3.6 released</a></p>
+<h2 id="ruby">Rubyのインストール</h2>
 
-<h3 id="section">リリースノート引用</h3>
+<p>nanocはRuby製のソフトウェアです。nanocを利用するには最初にRubyをインストールする必要があります。
+例えば、あなたの使用しているOSがWindowsでしたら、<a href="http://rubyinstaller.org/">RubyInstaller for Windows</a>を使うという方法があります。配布先のページは英語ページですが、Ruby Associationのサイト上で日本語による詳細なRubyInstaller for Windowsを利用したRubyのインストール方法について解説「<a href="http://www.ruby.or.jp/ja/tech/install/ruby/install_win.html">Rubyアソシエーション: インストール手順(Windows)</a>」があります。</p>
 
-<p>（以下、引用）</p>
+<p>Rubyのインストールについては、OSごとの違いがあったり、Rubyのバージョンを管理するソフトを使用する場合もあったりと、いろいろな方法があります。</p>
 
-<blockquote>
-  <p>Release notes for nanoc 3.6.0:</p>
+<h2 id="nanoc">nanocのインストール</h2>
 
-  <p>Features:</p>
+<p>nanocのインストールにはRubyGemsというパッケージ管理システムを利用します。Rubyのバージョンが1.9以降であれば、Rubyをインストールすれば使えるようになっています。そして、RubyGemsは「gem」というコマンドで実行できます。</p>
 
-  <ul>
-    <li>Added <code>sync</code> command, allowing data sources to update local caches of
-external data [Justin Hileman]</li>
-    <li>Added <code>#ignore</code> compiler DSL method</li>
-    <li>Allowed accessing items by identifier using e.g. <code>@items['/about/']</code></li>
-    <li>Added <code>shell</code> command</li>
-  </ul>
+<p>例えば今回の場合、nanocをRubyGemsを利用してインストールしますので、Windowsですとコマンドプロンプトを立ち上げて次のコマンドを実行します。</p>
 
-  <p>Enhancements:</p>
+<pre><code>gem install nanoc
+</code></pre>
 
-  <ul>
-    <li>Renamed the nanoc configuration file from <code>config.yaml</code> to <code>nanoc.yaml</code></li>
-  </ul>
+<p>筆者の実行環境（Windows XP、Ruby1.9.3p385）においては文字コード関係のエラーが発生しました。一つの解決策として、この場合は事前に次のコマンドを実行しておくべきでした。</p>
 
-  <p>Fixes:</p>
+<pre><code>set LANG=ja_JP.UTF-8
+</code></pre>
 
-  <ul>
-    <li>Updated references to old web site and old repository</li>
-    <li>Made <code>require</code> errors mention Bundler if appropriate</li>
-    <li>Fixed bug which caused pruner not to delete directories in some cases [@reima]</li>
-    <li>Made <code>check</code> command exit with the proper exit status</li>
-    <li>Added support for the <code>HTML_TOC</code> Redcarpet renderer</li>
-    <li>Made <code>stale</code> check honor files excluded by the pruner</li>
-  </ul>
-</blockquote>
+<p>再度インストールをした所、今度は無事に完了しました。また、nanocの利用時にはコンパイルを行いますが、その際にも文字コードの問題に悩まされます。
+今回はコマンドプロンプト上でLANGという環境変数を一時的に設定してインストールを完了しましたが、一々環境変数を設定するのは面倒です。この面倒はOSの環境変数の設定を行うことで解決します。</p>
 
-<p>（引用おわり）</p>
+<h2 id="os">他のOSの利用を（やや強めに）おすすめします</h2>
+
+<p>このような文字コードの問題を解決する方法としては、他のOSを利用するという手段があります。
+他のOSというと敷居が高そうに感じますが、無料で、Windows上の仮想環境で利用できるOSがあります。例えば<a href="http://www.ubuntulinux.jp/">Ubuntu</a>の利用はいかがでしょうか。（※仮想環境での他OSの実行は、ある程度マシンスペックが必要です。）</p>
 
     </div>
   </div>

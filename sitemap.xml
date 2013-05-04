@@ -36,4 +36,48 @@
     <loc>http://jnanoc.org/news/2013/04/nanoc_stdu_group_vol_0/</loc>
     <lastmod>2013-04-21</lastmod>
   </url>
+  <url>
+    <loc>http://jnanoc.org/tips/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/applied_tips/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/applied_tips/create_item_with_dynamic/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/applied_tips/use_bundler/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/applied_tips/use_guard_nanoc/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/informations/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/informations/study_meeting_0/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/preparations/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/preparations/create_site/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/preparations/development/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/tips/preparations/install/</loc>
+    <lastmod>2013-05-05</lastmod>
+  </url>
 </urlset>
