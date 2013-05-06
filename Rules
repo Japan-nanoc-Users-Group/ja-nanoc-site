@@ -18,18 +18,12 @@ preprocess do
   generate_page
 end
 
-compile '/(content|js|css)/*' do
+compile '/static/*' do
   # don’t filter or layout
 end
 
-route '/(content|js|css)/*' do
-  basename = item.identifier.chop
-  ext = item[:extension]
-  if ext == 'dummyext'
-    basename
-  else
-    "#{basename}.#{ext}"
-  end
+route '/static/*' do
+  item.identifier[7..-2]
 end
 
 compile '/stylesheet/' do
