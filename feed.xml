@@ -2,13 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-04-28T15:00:00Z</updated>
+  <updated>2013-05-30T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-05-31:/news/2013/05/nanoc3-6-4_is_released/</id>
+    <title type="html">nanoc3.6.4がリリースされました</title>
+    <published>2013-05-30T15:00:00Z</published>
+    <updated>2013-05-30T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/05/nanoc3-6-4_is_released/"/>
+    <content type="html">&lt;p&gt;nanoc3.6.4がリリースされました。リリースの内容（原文）は公式のリリースノートを参照してください。&lt;/p&gt;
+
+&lt;p&gt;今回のリリースにより、autocompile と watch コマンドから guard の利用に移行したようです。&lt;/p&gt;
+
+&lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
+
+&lt;p&gt;（以下、引用）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;3.6.4 (2013-05-29)&lt;/p&gt;
+
+  &lt;p&gt;Enhancements:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Deprecated watch and autocompile commands in favour of guard-nanoc&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Fixes:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Fixed bug which could cause the tmp/ dir to blow up in size&lt;/li&gt;
+    &lt;li&gt;Unescaped URLs when checking internal links&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;（引用おわり）&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-04-29:/news/2013/04/guard_nanoc_1_0_0_is_released/</id>
     <title type="html">guard-nanoc(1.0.0)がRubygemsを利用してインストール出来るようになりました</title>
@@ -156,40 +190,6 @@
     <content type="html">&lt;p&gt;下記のサイトでタスク管理が行われています。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://trello.com/board/nanoc-4-0/51671a676672ded155000027" title="nanoc4Trello"&gt;nanoc4.0  Trello&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:jnanoc.org,2013-04-04:/news/2013/03/nanoc3-6-2_is_released/</id>
-    <title type="html">nanoc3.6.2がリリースされました</title>
-    <published>2013-04-03T15:00:00Z</published>
-    <updated>2013-04-03T15:00:00Z</updated>
-    <link rel="alternate" href="http://jnanoc.org/news/2013/03/nanoc3-6-2_is_released/"/>
-    <content type="html">&lt;p&gt;nanoc3.6.2がリリースされました。今回はFixの他、機能追加(Checksファイルとして使える名前の追加等)もあるようです。リリースの内容（原文）は公式のリリースノートを参照してください。&lt;/p&gt;
-
-&lt;h3 id="section"&gt;リリースノート引用&lt;/h3&gt;
-
-&lt;p&gt;（以下、引用）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;3.6.2 (2013-03-23)&lt;/p&gt;
-
-  &lt;p&gt;Fixes:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Removed the list of available deployers from the deploy help text and moved them into a new –list-deployers option [Damien Pollet]&lt;/li&gt;
-    &lt;li&gt;Fixed warning about __send__and object_id being redefined on Ruby 1.8.x [Justin Hileman]&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;Enhancements:&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Added possible alternative names for the Checks file for consistency with the Rules file: Checks.rb, checks, checks.rb [Damien Pollet]&lt;/li&gt;
-    &lt;li&gt;Made sure unchanged files never have their mtime updated [Justin Hileman]&lt;/li&gt;
-    &lt;li&gt;Made link checker retry 405 Method Not Allowed results with GET instead of HEAD [Daniel Hofstetter]&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;（引用おわり）&lt;/p&gt;
 </content>
   </entry>
 </feed>
