@@ -1,0 +1,41 @@
+---
+title: "guard nanocを利用する"
+publish: true
+created_at: 2013/05/05
+---
+watchコマンドからguard利用を推奨する流れになってきています。(2013.4.29にguard-nanoc 1.0.0 がリリースされました。)
+
+公式のGitHub上[guard-nanoc](https://github.com/guard/guard-nanoc)で解説されていますが、guardの使い方はguardの公式を見るべしとのことなので、ここではざっくりと動かすところまで確認します。
+
+bundlerを利用した例です。bundlerについては[[bundlerを利用する]]をご覧ください。
+
+始めに、Gemfileに次の記述を追加します。
+
+    gem "guard"
+    gem "guard-nanoc"
+
+続いて、次のコマンドで先ほど追加したgemをインストールします。
+
+    bundle update
+
+Guardファイルを作成するため、次のコマンドを打ち込みます。
+
+    bundle exec guard init nanoc
+
+すると、次の内容でGuardファイルが生成されました。
+
+    # A sample Guardfile
+    # More info at https://github.com/guard/guard#readme
+   
+    guard 'nanoc' do
+      watch('nanoc.yaml') # Change this to config.yaml if you use the old config file name
+      watch('Rules')
+      watch(%r{^(content|layouts|lib)/.*$})
+    end
+
+監視するファイルやフォルダの設定はこのままに、guardを利用してみます。
+次のコマンドを打ち込みます。
+
+    bundle exec guard
+
+これで、ファイルが更新される度、自動的にコンパイルされるようになりました。

@@ -1,34 +1,87 @@
 <%= render('_header') %>
 <body>
-<div id="wrapper">
-  <div id="page">
-    <div id="page-bgtop">
-      <div id="page-bgbtm">
-        <div id="content">
-          <div class="post">
+<header id="overview">
+  <div class="container hero-unit">
+    <h1>Japan nanoc Users&#039; Group</h1>
+    <p class="lead">日本nanocユーザ会（Japan nanoc Users&#039; Group）は、日本のnanocユーザ有志のコミュニティです。日本でのnanocの普及と、nanocの日本語情報拡充を主な目的としています。</p>
+  </div>
+</header>
 
-            <h2 class="title"><%= @item[:title] %></h2>
-            <p class="meta"><span class="date"><%= @item[:created_at] %></span></p>
-            <div style="clear: both;">&nbsp;</div>
-            <div class="entry">
-              <%= yield %>
-            </div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12" id="menu">
+      <ul class="listview fluid">
+        <li><a href="/tips/">
+          <div class="icon">
+            <i class="icon-compass-alt"></i>
           </div>
-          <div style="clear: both;">&nbsp;</div>
-
-        </div>
-
-        <!-- end #content -->
-
-        <%= render('_side') %>
-        <!-- end #sidebar -->
-        <div style="clear: both;">&nbsp;</div>
-      </div>
+          <div class="data">
+            <h4>Tips</h4>
+            <p>Tipsを公開しています。ネタの提供大歓迎！。</p>
+          </div></a>
+        </li>
+        <li><a href="/feed.xml">
+          <div class="icon" style="color:orange;">
+            <i class="icon-rss"></i>
+          </div>
+          <div class="data">
+            <h4>Feed</h4>
+            <p>News記事については、RSSリーダー等で更新の確認が出来ます。</p>
+          </div></a>
+        </li>
+        <li><a href="/news_archives/1/">
+          <div class="icon" style="color:#339900;">
+             <i class="icon-globe-alt"></i>
+          </div>
+          <div class="data">
+            <h4>News</h4>
+            <p>各種お知らせや情報提供。</p>
+          </div></a>
+        </li>
+        <li><a href="https://groups.google.com/d/forum/japan-nanoc-users-group">
+          <div class="icon" style="color:#3366cc;">
+            <i class="icon-group-alt"></i>
+          </div>
+          <div class="data">
+            <h4>Group</h4>
+            <p>コミュニケーション用のGoogleグループです。</p>
+          </div></a>
+        </li>
+        <li><a href="#">
+          <div class="icon" style="color:#336677;">
+            <i class="icon-graph"></i>
+          </div>
+          <div class="data">
+            <h4>事例紹介（準備中）</h4>
+            <p>nanocを利用された事例紹介を準備しております。</p>
+          </div></a>
+        </li>
+      </ul>
     </div>
   </div>
-  <!-- end #page -->
+  <div class="row-fluid">
+    <div class="span4">
+      <%= render('_side') %>      
+    </div>
+    <div class="span8">
+      <% if @item.identifier[0..14] == "/news_archives/" %>
+        <ul class="breadcrumb">
+          <li><a href="/">トップ</a> <span class="divider">/</span></li>
+          <li class="active">News</li>
+        </ul>
+        <%= render('_news_archives') %>
+      <% else %>
+        <%= breadcrumbs unless @item.identifier == "/" %>
+        <%= render('_article_header') unless @item.identifier[0..5] == "/tips/" %>
+      <% end %>
+      <%= yield %>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <%= render('_footer') %>      
+    </div>
+  </div>
 </div>
-
-<%= render('_footer') %>
 </body>
 </html>

@@ -2,14 +2,15 @@
 title: "日本nanocユーザ会へようこそ！"
 publish: true
 ---
-<%= render('_header') %>
-<body>
-<div id="index_wrapper">
-  <div id="index_logo">
-     <h1>Japan<br />nanoc<br />Users&#039;<br />Group</h1>  
-  </div>
-  <br />
-  <p><a href="/news_archives/1/">News</a> | Tips(準備中・<a href="https://github.com/Japan-nanoc-Users-Group/ja-nanoc-site/wiki">GitHubにて暫定運営中</a>)</p>
-</div>
 
-</body>
+<p>日本nanocユーザ会では、nanocの普及のため主に日本語情報の配信を行います。</p>
+
+
+<h2>News</h2>
+  <div class="post">
+    <ul>
+    <% sorted_articles[0..5].each do |item|  %>
+      <li>[<%= item[:created_at] %>] <a href="<%= item.identifier %>"><%= item[:title] %></a></li>
+    <% end %>
+    </ul>
+  </div>

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
-
+#
 # A few helpful tips about the Rules file:
 #
 # * The string given to #compile and #route are matching patterns for
@@ -18,17 +18,36 @@ preprocess do
   generate_page
 end
 
+compile '/static/*' do
+  # don’t filter or layout
+end
+
+route '/static/*' do
+  item.identifier[7..-2]
+end
+
 compile '/stylesheet/' do
   # don’t filter or layout
 end
 
 compile '/' do
   filter :erb
+  layout 'default'
 end
 
-compile '/news_archives/*/' do
+compile '/tips/' do
   filter :erb
-  layout 'news_archives'
+  layout 'default'
+end
+
+compile '/tips/*/*/' do
+  filter :kramdown
+  layout 'default'
+end
+
+compile '/tips/*/' do
+  filter :erb
+  layout 'default'
 end
 
 compile '/feed/' do
@@ -37,6 +56,11 @@ end
 
 compile '/sitemap/' do
   filter :erb
+end
+
+compile '/news_archives/*' do
+  filter :erb
+  layout 'default'
 end
 
 compile '*' do

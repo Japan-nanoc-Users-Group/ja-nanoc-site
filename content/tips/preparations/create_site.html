@@ -1,0 +1,41 @@
+---
+title: "サイトのひな形を作成する"
+publish: true
+created_at: 2013/05/05
+---
+## 基本的なコマンドを利用してサイトのひな形を作成する
+
+nanocには基本的なコマンドがあります。初めてnanocを利用するときに覚えておくと良いのは次のコマンドです。
+
+* create_site
+* co
+* aco
+
+nanocのコマンドは例えばcreate_siteの場合「nanoc create_site param」（paramは引数として自分で設定）というような形で使います。
+実際にコマンドを利用してサイトのひな形を作ってみます。
+
+### その前に…
+
+この記事を読んでいるあなたは、「gem install nanoc」でnanoc自体はインストールしていると思います。
+しかし、nanocは他のライブラリに依存しており、それらをインストールしなければ使えない機能があります。
+もしも使えない機能を使おうとしたら「LoadError」というエラーが発生します。例えば以下のようなメッセージが出てきます。
+
+    LoadError: no such file to load -- mime/types
+
+そして、その次の行には以下のようなメッセージが出てきます。（一部割愛）
+
+    Try installing the 'mime-types' gem (gem install mime-types) and then re-running the command.
+
+これは足りないライブラリを教えてくれています。この場合はmime-typesというgemがインストールされていないので、インストールしてからもう一度試すことを促しています。ですので、mime-typesをインストールしてみましょう。
+
+    gem install mime-types
+
+ここではmime-typesを例に挙げましたが、他のライブラリが足りない場合もあります。複数足りない場合もあります。
+LoadErrorの指示に従ってインストールするのが基本的な対応です。
+
+## ひな形を作成する
+
+    nanoc create_site hogehoge
+
+hogehogeは自分の好きな文字を入れましょう。ここで入れた文字を基に、ディレクトリ（フォルダ）が作成されて、その中に必要なファイルがいくつか生成されます。
+驚くべきことに、サイトのひな形はこれで完成です。
