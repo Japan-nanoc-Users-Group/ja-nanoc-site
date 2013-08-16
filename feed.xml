@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://jnanoc.org/</id>
   <title>日本nanocユーザ会</title>
-  <updated>2013-05-30T15:00:00Z</updated>
+  <updated>2013-08-15T15:00:00Z</updated>
   <link rel="alternate" href="http://jnanoc.org/"/>
   <link rel="self" href="http://jnanoc.org/feed.xml"/>
   <author>
     <name>日本nanocユーザ会</name>
     <uri>http://jnanoc.org/</uri>
   </author>
+  <entry>
+    <id>tag:jnanoc.org,2013-08-16:/news/2013/08/osc_shimane_2013/</id>
+    <title type="html">OSC 2013 Shimane に参加します。</title>
+    <published>2013-08-15T15:00:00Z</published>
+    <updated>2013-08-15T15:00:00Z</updated>
+    <link rel="alternate" href="http://jnanoc.org/news/2013/08/osc_shimane_2013/"/>
+    <content type="html">&lt;p&gt;日本nanocユーザ会(以下、本会という)は&lt;a href="http://www.ospn.jp/osc2013-shimane/"&gt;オープンソースカンファレンス2013 Shimane&lt;/a&gt;(2013年8月24日開催)に参加します。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <id>tag:jnanoc.org,2013-05-31:/news/2013/05/nanoc3-6-4_is_released/</id>
     <title type="html">nanoc3.6.4がリリースされました</title>
@@ -179,17 +188,6 @@
 
 &lt;p&gt;写真は懇親会の時の様子です。
 &lt;a href="https://twitter.com/xaizo"&gt;@xaizo&lt;/a&gt;さんには実質的な幹事役として大変お世話になりました。ありがとうございました。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <id>tag:jnanoc.org,2013-04-14:/news/2013/04/nanoc4_0_on_trello_board/</id>
-    <title type="html">nanoc4.0へ向けてのタスク管理が公開されています</title>
-    <published>2013-04-13T15:00:00Z</published>
-    <updated>2013-04-13T15:00:00Z</updated>
-    <link rel="alternate" href="http://jnanoc.org/news/2013/04/nanoc4_0_on_trello_board/"/>
-    <content type="html">&lt;p&gt;下記のサイトでタスク管理が行われています。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://trello.com/board/nanoc-4-0/51671a676672ded155000027" title="nanoc4Trello"&gt;nanoc4.0  Trello&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>

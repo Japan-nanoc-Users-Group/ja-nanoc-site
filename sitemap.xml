@@ -2,90 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://jnanoc.org/</loc>
-    <lastmod>2013-04-21</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/02/jnanoc_site_opend/</loc>
-    <lastmod>2013-02-12</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/02/nanoc3-6-1_is_released/</loc>
-    <lastmod>2013-04-19</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/02/nanoc3-6_is_released/</loc>
-    <lastmod>2013-04-19</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/02/opening_event/</loc>
-    <lastmod>2013-04-19</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/03/nanoc3-6-2_is_released/</loc>
-    <lastmod>2013-04-19</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/04/guard_nanoc_1_0_0_is_released/</loc>
-    <lastmod>2013-05-31</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/04/nanoc3-6-3_is_released/</loc>
-    <lastmod>2013-04-25</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/04/nanoc4_0_on_trello_board/</loc>
-    <lastmod>2013-04-19</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/04/nanoc_stdu_group_vol_0/</loc>
-    <lastmod>2013-04-21</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/news/2013/05/nanoc3-6-4_is_released/</loc>
-    <lastmod>2013-05-31</lastmod>
+    <lastmod>2013-08-16</lastmod>
+  </url>
+  <url>
+    <loc>http://jnanoc.org/news/2013/08/osc_shimane_2013/</loc>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/applied_tips/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/applied_tips/create_item_with_dynamic/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/applied_tips/use_bundler/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/applied_tips/use_guard_nanoc/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/informations/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/informations/study_meeting_0/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/preparations/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/preparations/create_site/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/preparations/development/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
   <url>
     <loc>http://jnanoc.org/tips/preparations/install/</loc>
-    <lastmod>2013-05-05</lastmod>
+    <lastmod>2013-08-16</lastmod>
   </url>
 </urlset>
