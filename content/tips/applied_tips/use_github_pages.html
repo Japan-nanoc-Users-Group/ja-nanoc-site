@@ -1,0 +1,54 @@
+---
+title: "nanocで作成したサイトをGitHub Pagesで公開する"
+publish: true
+created_at: 2013/08/24
+---
+
+## nanocで作成したサイトをGitHub Pagesで公開する
+
+まずはnanocのサイトを作成して、サーバーを立ち上げます。
+
+    nanoc create_site osc
+    cd osc
+    nanoc compile
+    nanoc view
+
+ブラウザでサイトが作成できていることを確認します。
+
+次に、ソースはoutputに生成されていますのでoutputに移動します。
+
+    cd output
+
+次にGitHubにpushしていきます。
+GitHub Pagesにウェブサイトをアップするには大きく2つの方法があります。
+
+１．ユーザー、あるいは組織名と同じ名前をサブドメインとするリポジトリを作成し、そのmasterブランチにHTML等のソースをプッシュする方法
+
+例）
+username/username.github.io
+
+２．リポジトリにgh-pagesブランチを作成し、そこにHTML等のソースをプッシュする方法
+
+例）
+username/hogehoge（gh-pagesブランチの場合名前を問わない）
+
+ここでは１の方法をとります。nanocでサイトを構築する場合は、２の方法よりも１の方法が比較的良いと思います。
+
+GitHubのサイトで組織を作成し、その組織でリポジトリを作成してください。
+ここでは例えば「oscs」という名前の組織を作り、「oscs.github.io」というリポジトリを作成したとします。
+
+先ほど既にoutputに移動しています。
+
+    git init
+    git add .
+    git commit -m "my first nanoc site"
+    git remote add origin https://github.com/oscs/oscs.github.io.git
+    git push origin master
+
+ユーザー名とパスワードを入力するように促されますので、入力してください。
+
+このようにして作成したサイトは
+
+http://oscs.github.io
+
+で公開されます。（公開には若干時間がかかります。）
